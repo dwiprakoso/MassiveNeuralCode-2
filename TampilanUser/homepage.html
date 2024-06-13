@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | DriveDrazzle - Informasi Rental Kendaraan</title>
+    <link rel="icon" href="img/bg.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="margin-top: 20px;">
+            <div class="container">
+                <a class="navbar-brand me-auto" href="#">
+                    <img src="img/bg.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand me-auto" href="#">
+                            <img src="img/bg.png" alt="Logo" width="50" height="30" class="d-inline-block align-text-top">
+                        </a>
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-lg-5 justify-content-center flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 fw-normal mx-3 active" aria-current="page" href="homepage.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 fw-normal mx-3" href="rental.html">Rental</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 fw-normal mx-3" href="service.html">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 fw-normal mx-3" href="event.html">Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 fw-normal mx-3" href="community.html">Community</a>
+                            </li>
+                        </ul>
+                        <div class="d-grid gap-2 mt-3 d-lg-flex my-lg-auto align-items-center">
+                            <a href="login.html" class="text-decoration-underline me-3">Sign In</a>
+                            <a href="signup.html" class="btn btn-primary rounded-5 color:#2E90FA">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Banner -->
+    <div class="banner d-flex align-items-center" style="background-color: #F2F1F0; padding-top: 150px;">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6 banner-content">
+                <h1 class="home">Temani perjalanan Anda <br> dengan nyaman dan <br>aman</h1>
+                <p>Kemana kau ingin pergi?</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <img src="img/bannner1.png" alt="Car" class="img-fluid">
+            </div>
+        </div>
+        <!-- Schedule -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+            <div class="schedule p-3 rounded-5 shadow" style="background-color: white; max-width: 90%; margin-top: -60px;">
+            <form class="row g-2">
+                <div class="col-md-3 col-sm-6 position-relative">
+                    <i class="bi bi-geo-alt"></i>
+                <label for="location" class="form-label text-secondary">Location:</label>
+                <select class="form-select ps-3" aria-label="Location">
+                    <option selected>Choose Location</option> 
+                </select>
+            </div>
+            <div class="col-md-2 col-sm-6 position-relative">
+                <i class="bi bi-car-front"></i>
+                <label for="Vehicle" class="form-label text-secondary">Vehicle type:</label>
+                <select class="form-select ps-3" aria-label="Vehicle Type">
+                    <option selected>Car</option>
+                    <option value="1">Motorcycle</option>
+                </select>
+            </div>
+            <div class="col-md-2 col-sm-6 position-relative">
+                <i class="bi bi-calendar"></i>
+                <label for="pickup" class="form-label text-secondary">Pick Up:</label>
+                <input type="date" class="form-select ps-3" placeholder="Pickup" aria-label="Pickup">
+            </div>
+            <div class="col-md-2 col-sm-6 position-relative">
+                <i class="bi bi-calendar"></i>
+                <label for="pickup" class="form-label text-secondary">Return:</label>
+                <input type="date" class="form-select ps-3" placeholder="Pickup" aria-label="Pickup">
+            </div>
+    
+            <div class="col-md-1 col-sm-10 mb-1 rounded-5 ">
+                <label class="form-label d-block md-5">&nbsp;</label>
+                <button href="#" type="submit" class="btn btn-lg btn-primary btn-login">Search</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+<!-- End Schedule -->
+        </div>
+    </div>
+    <!-- End Banner -->
+<!-- About Me Section -->
+<!-- <div class="about-me-section text-center py-3" style="border: 2px solid blue; margin-top: 60px;margin-left: 150px; width: 1100px;">
+    <h2>Tentang Kami</h2>
+    <p class="title-about">Selamat datang di DriveDazzle, penyedia layanan rental mobil terkemuka di Indonesia. Kami bangga menjadi pilihan utama untuk kebutuhan transportasi Anda, baik untuk bisnis, liburan keluarga, atau acara khusus. Dengan visi menjadi perusahaan rental mobil terbaik dengan pelayanan unggul dan kendaraan berkualitas, kami berkomitmen memberikan pengalaman rental yang mudah, nyaman, dan memuaskan. Kami menawarkan berbagai jenis kendaraan, termasuk mobil konvensional, listrik, antik, dan campervan.</p>
+</div> -->
+<!-- End About Me Section -->
+    <!-- Brands -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <span class="merk me-5 " style="font-size: 1.8em;">SimSong</span>
+                    <span class="merk me-5 " style="font-size: 1.8em;">Harps</span>
+                    <span class="merk me-5 " style="font-size: 1.8em;">Diskvan</span>
+                    <span class="merk me-5 " style="font-size: 1.8em;">Ikon</span>
+                    <span class="merk me-5 " style="font-size: 1.8em;">Stroons</span>
+                    <span class="merk me-5 " style="font-size: 1.8em;">Cocoon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Brands -->
+
+    <!-- Services -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h1 class="tengah text-center mb-5 fw-bold">Hasil Berkualitas Tinggi,<br> Layanan Terbaik </h1>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset" class="card-img-top">
+                        <div class="card-block p-3">
+                            <h1 class="Kartu card-title mt-1 mb-2 text-center fw-bold">Family</h1>
+                            <p class="card-text text-center">Sewa mobil kami untuk liburan bersama keluarga. Nikmati kenyamanan dan kebebasan berkeliling..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/couple.png" alt="Photo of sunset" class="card-img-top">
+                        <div class="card-block p-3">
+                            <h1 class="Kartu card-title mt-1 mb-2 text-center fw-bold">Couple</h1>
+                            <p class="card-text text-center">Sewa mobil kami untuk petualangan romantis bersama pasangan. Jelajahi tempat indah, ciptakan kenangan tak terlupakan..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Friends.png" alt="Photo of sunset" class="card-img-top">
+                        <div class="card-block p-3">
+                            <h1 class="Kartu card-title mt-1 mb-2 text-center fw-bold">Outdoor</h1>
+                            <p class="card-text text-center"> Sewa kendaraan tangguh dan nyaman kami untuk kegiatan outdoor bersama teman. Jelajahi alam terbuka dengan bebas..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/testi2.png" alt="Photo of sunset" class="card-img-top">
+                        <div class="card-block p-3">
+                            <h1 class="Kartu card-title mt-1 mb-2 text-center fw-bold">Photography</h1>
+                            <p class="card-text text-center">Sewa mobil kami, dapatkan kendaraan yang sesuai untuk memaksimalkan potensi fotografi Anda..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Additional Section -->
+    <div class="container mt-5">
+        <h1 class="text-center fw-bold">Mengapa Memilih DriveDazzle?
+            <br>Temukan Mobil Anda</h1>
+        <div class="row mt-5">
+            <div class="tengah col-md-12 text-center">
+                <img src="img/Banner_tengah.png" alt="Example Image" class="img-fluid" style="max-width: 80%;">
+            </div>
+        </div>
+    </div>
+    <!-- End Additional Section -->
+
+   <!-- Find Your Car -->
+<!-- Services -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <h1 class="tengah text-center mb-7 fw-bold">Cari kendaraan anda</h1>
+        </div>
+    </div>
+    <!-- Rent A Car Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="img/car.png" alt="">
+                    <h4 class="text-uppercase mb-4">BMW X5</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">Rp. 1.400.000/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item  mb-4">
+                    <img class="img-fluid mb-4" src="img/car.png" alt="">
+                    <h4 class="text-uppercase mb-4">BMW X5</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">Rp. 1.485.000/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="img/car.png" alt="">
+                    <h4 class="text-uppercase mb-4 ">BMW X5</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">1.400.000/Day</a>
+                </div>
+            </div>
+            <!-- New Cards Start -->
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="img/car.png" alt="">
+                    <h4 class="text-uppercase mb-4">BMW X5</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>30K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">1.480.000/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="img/car.png" alt="">
+                    <h4 class="text-uppercase mb-4 ">BMW X5</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>20K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">1.400.000/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="img/car.png" alt="">
+                    <h4 class="text-uppercase mb-4">Tesla Model S</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2020</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>15K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">1.400.000/Day</a>
+                </div>
+            </div>
+            <!-- New Cards End -->
+        </div>
+    </div>
+</div>
+<section class="home-testimonial">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center testimonial-pos">
+            <div class=" testi2 col-md-12 pt-4 d-flex justify-content-center">
+                <h3>Testimonials</h3>
+            </div>
+            <div class=" testi col-md-12 d-flex justify-content-center">
+                <h1>APA KATA MEREKA!</h1>
+            </div>
+        </div>
+        <section class="home-testimonial-bottom">
+            <div class="container testimonial-inner">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-4 style-3">
+                        <div class="tour-item">
+                            <div class="tour-desc bg-white">
+                                <div class="tour-rating d-flex justify-content-center pb-2">
+                                    <span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                </div>
+                                <div class="tour-text color-grey-3 text-center">&ldquo;Saya sangat puas dengan layanan rental mobil di sini. Proses pemesanan sangat mudah dan cepat, mobil yang saya sewa dalam kondisi sangat baik dan bersih..&rdquo;</div>
+                                <div class="d-flex justify-content-center pt-2 pb-2">
+                                    <img class="tm-people" src="img/couple.png" alt="">
+                                </div>
+                                <div class="link-name d-flex justify-content-center">Andika Pratama</div>
+                                <div class="link-position d-flex justify-content-start">Pelanggan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 style-3">
+                        <div class="tour-item">
+                            <div class="tour-desc bg-white">
+                                <div class="tour-rating d-flex justify-content-center pb-2">
+                                    <span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                </div>
+                                <div class="tour-text color-grey-3 text-center">&ldquo;Ini adalah pengalaman pertama saya menyewa mobil, dan saya sangat terkesan dengan pelayanannya. Mobilnya baru dan nyaman untuk dikendarai, serta dilengkapi dengan semua fasilitas yang saya butuhkan..&rdquo;</div>
+                                <div class="d-flex justify-content-center pt-2 pb-2">
+                                    <img class="tm-people" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                </div>
+                                <div class="link-name d-flex justify-content-center">Rina Kusuma</div>
+                                <div class="link-position d-flex justify-content-start">Pelanggan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 style-3">
+                        <div class="tour-item">
+                            <div class="tour-desc bg-white">
+                                <div class="tour-rating d-flex justify-content-center pb-2">
+                                    <span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                </div>
+                                <div class="tour-text color-grey-3 text-center">&ldquo;Pelayanan yang luar biasa! Saya menyewa mobil untuk liburan keluarga, dan semuanya berjalan lancar tanpa kendala. Customer service-nya sangat membantu dalam memberikan informasi dan rekomendasi mobil yang sesuai dengan kebutuhan kami..&rdquo;</div>
+                                <div class="d-flex justify-content-center pt-2 pb-2">
+                                    <img class="tm-people" src="img/Friend.png" alt="">
+                                </div>
+                                <div class="link-name d-flex justify-content-center">Budi Santoso</div>
+                                <div class="link-position d-flex text-center">Pelanggan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-end mt-4">
+                    <div class="col-md-2 d-flex">
+                        <button class="btn btn-read btn-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<!-- Footer -->
+<div class="container2-fluid py-2 mb-4" style="background:white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/bg.png" alt="Gambar" class="img-fluid mb-3">
+                <p class="fw-normal" style="font-size: 15px; color: black">
+                    <strong>DriveDazzle </strong>merupakan website yang menyediakan layanan rental kendaraan listrik dan konvensional.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p style="font-size: 15px; color: black; text-align: left;">Legals</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-3">
+                <p style="font-size: 15px; color: black; text-align: left;">Contact</p>
+                <ul class="list-unstyled">
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p style="font-size: 15px; color: black; text-align: left;">Follow Us</p>
+                <ul class="list-unstyled">
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-instagram text-blu"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-twitter text-blu"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-facebook text-blu"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-eMNxW2B0fhuWhKKCPYtdjKUlry9jF6CVyyfiYFGV9Q74pOuBLOeOht9qYgD8tz9T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-1io6L+NDfRB16X5Yl6eDqN6fKET6Q5/eLO3LYU44WxJrdy1kjLU4U1qN+hKNIYrN" crossorigin="anonymous"></script>
+</body>
+
+</html>
